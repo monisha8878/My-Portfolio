@@ -110,7 +110,7 @@ nav {
 }.about-col-1{
    flex-basis:  60%;
    text-align: left;
-   
+
 }
 
 .subtitle{font-size:60px;
@@ -623,7 +623,8 @@ nav {
 font-size: 30px;}
 
 .content{
-  
+  align-items: center;
+  display: flex;
   font-size: 14px;
   margin-left: 20px;
   margin-right: 20px;
