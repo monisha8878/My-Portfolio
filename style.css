@@ -464,9 +464,11 @@ nav {
     } .header-text {
     font-size: 20px;
     margin-top: 50px;
+    text-align: center;
   } .header-text h1 {
     font-size: 28px;
     margin-top: 10px;
+    text-align: center;
   } .align-name {
     font-size: 30px;
   }.title {
