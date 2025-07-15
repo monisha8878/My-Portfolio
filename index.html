@@ -23,15 +23,16 @@
                 <!-- <li> <a href="#">Courses</a></li> -->
                 <li> <a href="#contact">Contact</a></li>
                 
-                <i class="fa-regular fa-circle-xmark"onclick="closemenu()"></i>
+                
             </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            <i class="fa-regular fa-circle-xmark " id="close-icon"onclick="closemenu()"></i>
+            <i class="fa-solid fa-bars" id="menu-icon" onclick="openmenu()"></i>
 
         </nav>
 <div id="header">
     <div class="container ">
        
-        <div class="header-text" style="text-align: right;">
+        <div class="header-text" >
             <!-- <p> Electrical Engineering Student</p> -->
          <h1><span class="hi">  Hi, I'm</span><br>
                 <span class="align-name">Monisha Bangar</span>
@@ -322,26 +323,33 @@ window.addEventListener('scroll', () => {
 
 
 
- 
-  const headers = document.querySelectorAll(".accordion-header");
 
-  headers.forEach(header => {
-    header.addEventListener("click", () => {
-      const item = header.parentElement;
-      item.classList.toggle("active");
+const headers = document.querySelectorAll(".accordion-header");
 
-      const content = header.nextElementSibling;
-      content.style.display = content.style.display === "block" ? "none" : "block";
-    });
+headers.forEach(header => {
+  header.addEventListener("click", () => {
+    const item = header.parentElement;
+    item.classList.toggle("active");
+
+    const content = header.nextElementSibling;
+    content.style.display = content.style.display === "block" ? "none" : "block";
   });
-var sidemenu=document.getElementById("sidemenu");
-function openmenu(){
-    sidemenu.style.right="0";
-}
-function closemenu(){
-    sidemenu.style.right="-200px";
-}
+});
+  const sidemenu = document.getElementById("sidemenu");
+  const menuIcon = document.getElementById("menu-icon");
+  const closeIcon = document.getElementById("close-icon");
 
+  function openmenu() {
+     sidemenu.classList.add("active");
+    menuIcon.style.display = "none";
+    closeIcon.style.display = "block";
+  }
+
+  function closemenu() {
+    sidemenu.classList.remove("active");
+    menuIcon.style.display = "block";
+    closeIcon.style.display = "none";
+  }
 
 
 </script>
