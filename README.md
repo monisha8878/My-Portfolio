@@ -13,7 +13,7 @@ While the layout and design are based on the tutorial, I’m gradually customizi
 
 - ✅ **Desktop version** is complete and fully functional.
 - 📱 **Mobile responsiveness** is a work in progress — I'm actively improving the layout for smaller screens.
-- 🌟 Future updates will include smoother transitions, small interactive elements, and overall polish.
+
 
 ## 🔧 Technologies Used
 
