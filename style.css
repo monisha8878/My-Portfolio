@@ -68,10 +68,12 @@ nav {
     margin-top: 20px;
     padding: 10px 0 ;
     display: inline-block;
+    text-align: right;
  }.align-name {
     color : #8697e3;
     padding-right: 0ch; /* 'ch' = width of the character "0", good for text alignment */
     display: inline-block;
+    text-align: right;
  /* }.hi{
     padding-right: 7.8ch;
     display: inline-block; */
@@ -107,6 +109,7 @@ nav {
     border-radius: 15px;
 }.about-col-1{
    flex-basis:  60%;
+   text-align: left;
    
 }
 
@@ -144,13 +147,13 @@ nav {
    align items: right; */
    font-size: 18px;
    font-weight: 500;
-line-height: 1.8;
-color: #c4c8d4;
-max-width: 800px;
-text-align: justify;
-padding-top: 30px;
-   padding-left: 50px;
-}
+  line-height: 1.8;
+  color: #c4c8d4;
+  max-width: 800px;
+  text-align: justify;
+  padding-top: 30px;
+    padding-left: 50px;
+  }
 .tabtitles{
    display: flex;
    margin: 20px 50px 40px
@@ -523,7 +526,7 @@ padding-top: 30px;
     text-decoration: none;
   }.row {
     flex-direction: column;
-    align-items: center;
+    
   }
 
   .about-col-1, .about-col-2 {
